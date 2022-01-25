@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<script type="text/javascript" src="fullpage.js" async></script>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Shekhar Kumar">
+	<meta name="description" content="I'm Shekhar , a budding programmer from India. I'm currently pursuing B.E in Information Technology from  AIT Pune . I love solving tech problems and devote most of my time to code and develop projects so that I never get bored.">
+	<meta name="keywords" content="CV, Resume, Portfolio, Army Institute Of Technology">
+	<title>Shekhar</title>
+
+
+	<!----------------------------  Javascript---------------------->
+	<script>
+	document.onreadystatechange = function() {
+		if(document.readyState !== "complete") {} else {
+			document.getElementById('intro-sec').style.visibility = "visible";
+			document.getElementById('timeline-sec').style.visibility = "visible";
+			document.getElementById('skill-sec').style.visibility = "visible";
+			document.getElementById('projects-sec').style.visibility = "visible";
+			document.getElementById('achieve-sec').style.visibility = "visible";
+			document.getElementById('experience-sec').style.visibility = "visible";
+			document.getElementById('mooc-sec').style.visibility = "visible";
+			document.getElementById('blog').style.visibility = "visible";
+			document.getElementById('contact-sec').style.visibility = "visible";
+			new TypeIt("#myElement", {
+				speed: 50,
+				waitUntilVisible: true
+			}).type("Coder").pause(2000).delete(5).type('Developer').pause(2000).delete(9).type('DIY Enthusiasts').pause(2000).delete(15).type('A chaos in space time').go();
+		}
+	};
+
+	</script>
+
+
+	<!----------------------------  CSS---------------------->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="fullpage.css" />
+	<!---------------------------- Bootstrap -------------------->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<!---------------------------- Fonts -------------------->
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+	<!---------------------------- End Firebase setup scripts------------------------------------------->
+</head>
+
+<body>
+	<div id="fullpage">
+		<!---------------------------- Start Home Section ------------------------------------------->
+		<div id="home-sec" class="section fp-auto-height-responsive">
+			<div class="media-icon-area">
+				<div class="icon-list"> <a class="nav-logo-github" href="https://github.com/The-Anton"><i class="fab fa-github fa-2x"></i></a> <a class="nav-logo-linkedin" href="https://www.linkedin.com/in/the-anton/"><i class="fab fa-linkedin fa-2x"></i></a> <a class="nav-logo-fb" href="https://www.facebook.com/profile.php?id=100005728093339"><i class="fab fa-facebook fa-2x"></i></a> <a class="nav-logo-twitter" href="https://twitter.com/the_anton01"><i class="fab fa-twitter fa-2x"></i></a> </div>
+			</div>
+			<div class="home row">
+				<div class="col-md-4 avatar-area"> <img class="av-img" data-src="./newdp.jpg" alt="avatar"> </div>
+				<div class="col-md-8 intro-area">
+					<p id="name">Shekhar Kumar</p>
+					<p id="myElement"></p> <a href="https://drive.google.com/file/d/1054fa-ano8goYsWZWkAcEXr-Afgh3MTv/view?usp=sharing" target="_blank" class="btn card" id="cv-btn">Download <br> Resume</a> </div>
+				<div id="chatbot-area">
+					<div class="ba-we-love-subscribers-wrap">
+						<div class="ba-we-love-subscribers popup-ani">
+							<iframe class="chatbot-iframe" allow="microphone;" width="250" height="300" src="https://console.dialogflow.com/api-client/demo/embedded/e9b6419f-ac7d-4e76-9d84-59ded7860e3c"> </iframe>
+							<div class="img ba-logo logo-ani"></div>
+						</div>
+						<div class="ba-we-love-subscribers-fab">
+							<div class="wrap"> <i class="fas fa-comment-alt  fa-2x"></i> </div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!---------------------------- Start Intro Section------------------------------------------->
+		<div id="intro-sec" class="section fp-auto-height-responsive" style="visibility: hidden; height: 0%;">
+			<div class="home row">
+				<div class="col-md-6" id="intro-area">
+					<p>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; I'm Shekhar , a budding programmer from India. I'm currently pursuing B.E in Information Technology from AIT Pune . I love solving tech problems and devote most of my time to code and develop projects so that I never get bored. Currently I'm floating in the domain of Machine Learning.
+						<br> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; Apart from this I love Robotics and binge-watching</p>
+				</div>
+				<div class="col-md-6" id="interest-area">
+					<div class="interest">
+						<p id="topic-1"></p>
+						<p class="multipleStrings"> </p>
+					</div>
+					<div class="cp-skills">
+						<p id="cptext"></p>
+					</div>
+					<div class="soft-skills">
+						<p id="companionMethods"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!---------------------------- Start timeline Section ------------------------------------------->
+		<div id="timeline-sec" class="section fp-auto-height-responsive" style="visibility: hidden; height: 0%;">
+			<div id="container">
+				<div id="line"></div>
+				<div class="circle start " id="start"> </div>
+				<div class="circle circleshow0" id="circle0">
+					<div id="circle0content">Secondry Education - Army Public School, Mathura Cantt</div>
+				</div>
+				<div class="circle circleshow1" id="circle1">
+					<div id="circle1content">Higher Senior Secondry Education - Army Public School, Mathura Cantt</div>
+				</div>
+				<div class="circle circleshow2" id="circle2">
+					<div id="circle2content">Cleared JEE Mains</div>
+				</div>
+				<div class="circle circleshow3" id="circle3">
+					<div id="circle3content">Army Institute Of Technology</div>
+				</div>
+				<div class="circle circleshow4" id="circle4">
+					<div id="circle4content">First Year ASGE Dept.</div>
+				</div>
+				<div class="circle circleshow5" id="circle5">
+					<div id="circle5content">Second Year IT Dept.</div>
+				</div>
+				<div class="end" id="end"><i class="fas fa-chevron-down fa-3x"></i> </div>
+			</div>
+		</div>
+		<!---------------------------- Start Skill Section------------------------------------------->
+		<div id="skill-sec" class="section fp-auto-height-responsive" style="visibility: hidden;">
+			<div class="skills-heading">
+				<p id="skills-heading-text">Skills</p>
+			</div>
+			<div class="row">
+				<div class="col-md-6 primary-skills-sec">
+					<div class="card" id="prime-skill-card">
+						<div class="card-body">
+							<div class="primary-skills">
+								<div class="language">
+									<div id="circleBar">
+										<div class="round r-1" data-value="0.80" data-size="120" data-thickness="8"> <strong>
+                                  <img src="https://img.icons8.com/color/60/000000/c-plus-plus-logo.png" alt="C++"/>     
+                                </strong> <span>
+                                </span> </div>
+									</div>
+									<div id="circleBar">
+										<div class="round r-2" data-value="0.50" data-size="120" data-thickness="8"> <strong> <img src="https://img.icons8.com/color/60/000000/java-coffee-cup-logo.png" alt="Java"/>
+                      
+                                </strong> <span>
+                                </span> </div>
+									</div>
+									<div id="circleBar">
+										<div class="round" data-value="0.60" data-size="120" data-thickness="8"> <strong> <img src="https://img.icons8.com/color/60/000000/javascript.png" alt="JavaScript"/>
+                      
+                                </strong> <span>
+                                </span> </div>
+									</div>
+									<div id="circleBar">
+										<div class="round" data-value="0.60" data-size="120" data-thickness="8"> <strong> <img src="https://img.icons8.com/color/60/000000/python.png" alt="python"/>
+                        
+                                  </strong> <span>
+                                  </span> </div>
+									</div>
+									<div id="circleBar">
+										<div class="round" data-size="120" data-value="0.50" data-thickness="8"> <strong> <img src="https://img.icons8.com/color/60/000000/kotlin.png" alt="Kotlin"/>
+                        
+                                  </strong> <span>
+                                  </span> </div>
+									</div>
+									<div id="circleBar">
+										<div class="round" data-value="0.90" data-size="120" data-thickness="8"> <strong> <img src="https://img.icons8.com/color/60/000000/css3.png" alt="CSS3"/> 
+                        
+                                  </strong> <span>
+                                  </span> </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="secondary-skills">
+						<div class="tools">
+							<div class="web-tools">
+								<div class="card">
+									<div class="card-body">
+										<h4 class="text">
+                            Web Devlopment Tools  
+                        </h4>
+										<div class="tools-logo"> <img id="node-logo" src="https://img.icons8.com/color/60/000000/nodejs.png" alt="Node.js" /> <img id="flask-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Flask_logo.svg/60px-Flask_logo.svg.png" alt="Flask" /> <img id="postgress-logo" src="https://img.icons8.com/color/48/000000/postgreesql.png" alt="postgress" /> <img id="sql-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Database-mysql.svg/64px-Database-mysql.svg.png" alt="Sql" /> </div>
+									</div>
+								</div>
+							</div>
+							<div class="android-tools">
+								<div class="card">
+									<div class="card-body">
+										<h4 class="text">
+                        Android Devlopment Tools 
+                      </h4>
+										<div class="tools-logo"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Android_Studio_icon.svg/64px-Android_Studio_icon.svg.png" alt="Android Studio" /> <img src="https://img.icons8.com/color/48/000000/flutter.png" alt="Flutter" /> <img src="https://img.icons8.com/fluent/60/000000/adobe-xd.png" alt="Adbobe-xd" /> </div>
+									</div>
+								</div>
+							</div>
+							<div class="ml-tools">
+								<div class="card">
+									<div class="card-body">
+										<h4 class="text">
+                        Machine Learning Tools 
+                      </h4>
+										<div class="tools-logo"> <img id="tensorflow-logo" src="https://img.icons8.com/color/60/000000/tensorflow.png" alt="TensorFlow" /> <img id="pytorch-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/PyTorch_logo_icon.svg/64px-PyTorch_logo_icon.svg.png" alt="PyTorch" /> <img id="juypter-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Jupyter_logo.svg/44px-Jupyter_logo.svg.png" alt="Juypter" /> <img id="mathplotlib-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/NumPy_logo.svg/128px-NumPy_logo.svg.png" alt="Numpy" /> <img id="colab-logo" src="https://colab.research.google.com/img/colab_favicon_256px.png" alt="Colab" /> </div>
+									</div>
+								</div>
+							</div>
+							<div class="other-tools">
+								<div class="card">
+									<div class="card-body">
+										<h4 class="text">
+                        Other Tools 
+                      </h4>
+										<div class="tools-logo"> <i class="fab fa-android fa-3x" style="color: greenyellow;"></i> <i class="fab fa-github fa-3x"></i> <img id="gcd-logo" src="https://img.icons8.com/color/60/000000/google-cloud-platform.png" alt="GCD" /> </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!---------------------------- Start Project Section------------------------------------------->
+		<div id="projects-sec" class="section fp-auto-height-responsive" style="visibility: hidden; height: 0%;"> <img id="project-anim1" src="./Selected/character 18.svg" alt="svg">
+			<div class="project-heading">
+				<p id="project-heading-text">Projects</p>
+			</div>
+			<div class="projects">
+				<div class="card-container">
+					<div class="card">
+						<div class="front">
+							<div class="card-image"> <img src="" alt=""> </div>
+							<div class="tech-stack">
+								<button class="btn">PyTorch</button>
+								<button class="btn">Python</button>
+							</div> <img data-src="./media/flower.webp" id='pr-img-1' alt="flower">
+							<div class="card-title">Flower Breed Classifier - PyTorch Machine Learning Model</div>
+						</div>
+						<div class="back">
+							<div class="card-back-text"> <span>A deep learning neural network that classifies flowers per the labels provided. Model is capable of transfer learning and provides results with Validation Accuracy of 90%.</span> </div>
+						</div>
+					</div>
+				</div>
+				<div class="card-container">
+					<div class="card">
+						<div class="front">
+							<div class="tech-stack">
+								<button class="btn">ARcore</button>
+								<button class="btn">Kotlin</button>
+							</div> <img data-src="./media/globe.webp" id='pr-img-2' alt="globe">
+							<div class="card-title">AR Globe - Globe in Augmented Reality</div>
+						</div>
+						<div class="back">
+							<div class="card-back-text"> <span>AR Globe is a VR app that projects  3D earth in a real-time environment. We can interact with the globe. It uses ARCore SDK to perform the heavy computation on an android device.</span> </div>
+						</div>
+					</div>
+				</div>
+				<div class="card-container">
+					<div class="card">
+						<div class="front">
+							<div class="tech-stack">
+								<button class="btn">TesorFlow</button>
+								<button class="btn">Python</button>
+							</div> <img data-src="./media/ipl.webp" id='pr-img-3' alt="ipl">
+							<div class="card-title">IPL Match Predictors - PyTorch Machine Learning Model</div>
+						</div>
+						<div class="back">
+							<div class="card-back-text"> <span> A TensorFlow model that predicts the winning chance of an IPL match. Chances are evaluated by training the model heavily on the previous match data.</span> </div>
+						</div>
+					</div>
+				</div>
+				<div class="card-container">
+					<div class="card">
+						<div class="front">
+							<div class="tech-stack">
+								<button class="btn">Kotlin</button>
+								<button class="btn">Java</button>
+							</div> <img data-src="./media/mate-2.webp" id='pr-img-4' alt="mate">
+							<div class="card-title">Mate - Event Managment & Live Leaderboard App</div>
+						</div>
+						<div class="back">
+							<div class="card-back-text"> <span>Mate is an android application that can be used to manage any competitive event. It reduces complicated management tasks by digitizing it. It also serves as the real-time score of all the matches or competition rankings.</span> </div>
+						</div>
+					</div>
+				</div>
+				<div class="card-container">
+					<div class="card">
+						<div class="front">
+							<div class="tech-stack">
+								<button class="btn">Kotlin</button>
+								<button class="btn">JavaScript</button>
+							</div> <img data-src="./media/qzoid-trans.webp" id='pr-img-5' alt="qzoid">
+							<div class="card-title">Qzoid - Crossplatform Quiz/Survey Sharing App</div>
+						</div>
+						<div class="back">
+							<div class="card-back-text"> <span>Qzoid is an android app that can be used to create and share Quiz and Survey. Sharing links opens the content over the internet which makes it highly accessible.</span> </div>
+						</div>
+					</div>
+				</div>
+				<div class="card-container">
+					<div class="card">
+						<div class="front">
+							<div class="tech-stack">
+								<button class="btn">Kotlin</button>
+								<button class="btn">ExoPlayer</button>
+							</div> <img data-src="./media/fireplayer.webp" id='pr-img-6' alt="fireplayer">
+							<div class="card-title">Fireplayer - Video Streaming Using ExoPlayer</div>
+						</div>
+						<div class="back">
+							<div class="card-back-text"> <span>Fireplayer is a video streaming app that streams online videos on mobile phones. Fireplayer uses Exo player to serve a responsive, fast, and efficient video playback experience. </span> </div>
+						</div>
+					</div>
+				</div>
+			</div> <img id="project-anim2" src="./Selected/character 20.svg" alt="svg"> </div>
+		<!---------------------------- Start achievment Section------------------------------------------->
+		<div id="achieve-sec" class="section fp-auto-height-responsive" style="visibility: hidden; height: 0%;">
+			<div class="achieve-heading">
+				<p id="achieve-heading-text">Milestones</p>
+			</div>
+			<div id="image-contain-sm"> <img src="./media/achieve-bg-sm.png" alt=""> </div>
+			<div id="image-contain-lg"> <img src="./media/achieve-bg.png" alt=""> </div>
+		</div>
+		<!---------------------------- Start Experience Section------------------------------------------->
+		<section id="experience-sec" class="section fp-auto-height-responsive" style="visibility: hidden; height: 0%;">
+			<!--   DigitalPersistent -->
+			<div class="slide slide1">
+				<div class="fixed-hdr experience-heading">
+					<p id="experience-heading-text">Experience</p>
+				</div>
+				<div class="slide-container">
+					<div class="card front-card c-1">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-md-6 row1">
+									<div class="company-logo digitalpersistent-logo"> <img src="media/Digital Persistent.webp" alt="Diagital Persistent"> </div>
+									<div class="company-position">
+										<p><b>Job Role</b> : Jr. Web Developer</p>
+										<p><b>Job Duration</b> : 1 Month</p>
+										<p><b>Job Type</b> : Internship</p>
+									</div>
+								</div>
+								<div class="col-md-6 row2">
+									<div class="job-text"> "Thought Power is a Consultancy Firm Under Digital Persistents. It was my first internship role. I was provided with task of devlopling their website from scratch. During the internship peroid I become familiar with PhP, JavaScript and frontend devploment tools." </div>
+									<div class="links l-1">
+										<button class="btn">PHP</button>
+										<button class="btn">CSS3</button>
+										<button class="btn">Frontend</button>
+										<button class="btn">HTML</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card background-card " id="b-1"> </div>
+				</div>
+			</div>
+			<!--   examcenter acadmey -->
+			<div class="slide">
+				<div class="slide-container">
+					<div class="card front-card">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-md-6 row1">
+									<div class="company-logo examcenter-logo"> <img data-src="media/examcenter.webp" alt="examcenter"> </div>
+									<div class="company-position">
+										<p><b>Job Role</b> : Senior Web Developer</p>
+										<p><b>Job Duration</b>: 4 Month</p>
+										<p><b>Job Type</b>: Internship</p>
+									</div>
+								</div>
+								<div class="col-md-6 row2">
+									<div class="job-text"> "I worked at ExamCenter Acadmey as a Technical Lead. My work was to develop and supervise the frontend and backend infrastructure of their website. The 4 month internship peroid taught me technical as well as managment skills. Creating an online examination portal for mobile and pc users was my take away achievment." </div>
+									<div class="links l-2">
+										<button class="btn">JavaScript</button>
+										<button class="btn">Node.js</button>
+										<button class="btn">Firebase</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card background-card b2"> </div>
+				</div>
+			</div>
+			<!--   Mate -->
+			<div class="slide">
+				<div class="slide-container">
+					<div class="card front-card">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-md-6 row1">
+									<div class="company-logo mate-logo"> <img data-src="media/mate.webp" alt="mate"> </div>
+									<div class="company-position">
+										<p><b>Job Role</b> : Android Developer</p>
+										<p><b>Job Duration</b>: 2 Month</p>
+										<p><b>Job Type</b>: Self-Owned Project</p>
+									</div>
+								</div>
+								<div class="col-md-6 row2">
+									<div class="job-text"> "Mate was our Team PBL project in first year. It is an android app for event managment and displaying realtime scores for the same. I worked heavily on the backend side using Kotlin. This team project was kick start to my ambition of having a startup. Our team fine collabration and hardwork prized us with first place" </div>
+									<div class="links l-3">
+										<button class="btn">Kotlin</button>
+										<button class="btn">Java</button>
+										<button class="btn">XML</button>
+										<button class="btn">JSON</button>
+										<button class="btn">Firebase</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card background-card b3"> </div>
+				</div>
+			</div>
+			<!--   IGPixel -->
+			<div class="slide">
+				<div class="slide-container">
+					<div class="card front-card">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-md-6 row1">
+									<div class="company-logo igpixel-logo"> <img data-src="media/igpixel-black.webp" alt="igpixel"> </div>
+									<div class="company-position">
+										<p><b>Job Role</b> : Backend Developer</p>
+										<p><b>Job Duration</b>: 1 Month</p>
+										<p><b>Job Type</b>: Internship</p>
+									</div>
+								</div>
+								<div class="col-md-6 row2">
+									<div class="job-text"> "Devlopment of a referral based registration system was the task I was assigned in the first place. Working in no-error environment and devloping a service used by thousands of people was the tough task. I was felt great to have that exposure and experience." </div>
+									<div class="links l-4">
+										<button class="btn">PHP</button>
+										<button class="btn">CSS3</button>
+										<button class="btn">HTML</button>
+										<button class="btn">JavaScript</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card background-card b4"> </div>
+				</div>
+			</div>
+			<!--   Qzoid -->
+			<div class="slide">
+				<div class="slide-container">
+					<div class="card front-card">
+						<div class="card-body">
+							<div class="row">
+								<div class="col-md-6 row1">
+									<div class="company-logo qzoid-logo"> <img data-src="media/qzoid-trans.webp" alt="qzoid"> </div>
+									<div class="company-position">
+										<p><b>Job Role</b> : Web Developer</p>
+										<p><b>Job Duration</b>: 1 Month</p>
+										<p><b>Job Type</b>: Self-Owned Project</p>
+									</div>
+								</div>
+								<div class="col-md-6 row2">
+									<div class="job-text"> "Qzoid is an ongoing startup of my team. It is a cross platform quiz and survey sharing service. For devloping qzoid I learned different methords and skills for providing the same user experience that Google Forms provide." </div>
+									<div class="links l-5">
+										<button class="btn">Java</button>
+										<button class="btn">Kotlin</button>
+										<button class="btn">JavaScript</button>
+										<button class="btn">Node.js</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="card background-card b5"> </div>
+				</div>
+			</div>
+		</section>
+		<!---------------------------- Start MOOC Section------------------------------------------->
+		<section id="mooc-sec" class="section fp-auto-height-responsive" style="visibility: hidden; height: 0%;">
+			<div class="slide">
+				<div class="mooc-heading">
+					<p id="mooc-heading-text">Accreditations</p>
+				</div> <img id="main-poster-certificate" src="./Selected/example-scene-2.svg" alt="contact-svg">
+				<div id="cert-sec">
+					<div class="col-md-6 catalog-sec">
+						<div class="card">
+							<div class="card-body" onclick="loadImage('ai-nanodegree.png')"> AI Nanodegree - Udacity </div>
+						</div>
+						<div class="card" onclick="loadImage('30DaysOfKotlin.png')">
+							<div class="card-body"> #30DayOfKotlin </div>
+						</div>
+						<div class="card" onclick="loadImage('cyber.png')">
+							<div class="card-body"> Introduction To Cyber Security </div>
+						</div>
+						<div class="card" onclick="loadImage('MicrosoftAIClassroom.png')">
+							<div class="card-body"> Microsoft AI Classroom Series </div>
+						</div>
+					</div>
+					<div class="certificate-sec" id="certificate-area-card">
+						<div class="card">
+							<div class="card-body"> <img src="media/ai-nanodegree.png" alt="certificate" style="z-index: 1000;" /> </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="slide">
+				<section id="badges-sec">
+					<div class="badge-heading">
+						<p>Google Cloud Skill Badges</p>
+					</div>
+					<div class="badges"> <img data-src="https://cdn.qwiklabs.com/sKP7%2Fq69EFKGaS5hVjP6eyNNqfGztiKPtEuk4a8ouVQ%3D" alt="Badge">
+						<div class=""> <img data-src="https://cdn.qwiklabs.com/apNpv%2BiHmmdV7%2F9uQ4WV%2BJJsqaD9aGMI6KsMJsgpnlA%3D" alt="Badge"> </div>
+						<div class=""> <img data-src="https://cdn.qwiklabs.com/%2FOMWtep04OmVV4X67ODrPJD%2BnsuN977UFkyO6SD486c%3D" alt="Badge"> </div>
+						<div class=""> <img data-src="https://cdn.qwiklabs.com/l0sFLZS%2BO9dGHcecgA2MrRf7u2BRusBkSVPzUDf8AUg%3D" alt="Badge"> </div>
+						<div class=""> <img data-src="https://cdn.qwiklabs.com/y3NiciFy8M48berRddcZjybSS0LABCiYCBX6L2U%2FPjk%3D" alt="Badge"> </div>
+						<div class=""> <img data-src="https://cdn.qwiklabs.com/id9fOsGQY3dzozgELKMTfVQA6QVr5047qDY6BTTJ17I%3D" alt="Badge"> </div>
+						<div class=""> <img data-src="https://cdn.qwiklabs.com/2nd5TLO%2BpmXArh2laFfQeO1ypildO%2FpayYNZJUStvRs%3D" alt="Badge"> </div>
+						<div class=""> <img data-src="https://cdn.qwiklabs.com/VjyAwxm%2FPfVYFe925M0qxSVYaVxDhz2woSQRdAEBMZ8%3D" alt="Badge"> </div>
+						<div class=""> <img data-src="https://cdn.qwiklabs.com/N3%2BwDzFLMX6LfRsvQUIvQJcjCa3AxXLw2LOjRXICzkA%3D" alt="Badge"> </div>
+						<div class=""> <img data-src="https://cdn.qwiklabs.com/2vbDZtRsIX5OPOvwaasl0Zcak6MtW6QdpEEWcHSnYek%3D" alt="Badge"> </div>
+						<div class="">
+							<!--         <img id='orange-badge' src="media/gcdbadge.webp" alt="">
+            </div>
+            <div class="">
+              <img src="https://cdn.qwiklabs.com/s7dCzJmly3eTjXxr4VKDE4OlhSFwOxjep%2BevnIVM1Ag%3D" alt="">
+            </div>
+            --></div>
+				</section>
+				</div>
+		</section>
+		<!---------------------------- Start Blog Section------------------------------------------->
+		<section id="blog" class="blog section fp-auto-height-responsive" style="visibility: hidden; height: 0%;">
+			<div class="article-heading">
+				<p id="article-heading-text">Blogs</p>
+			</div>
+			<div class="blog__header">
+				<p class="blog__header1">some of my Medium posts</p>
+			</div>
+			<div class="post-grid">
+				<ul class="blog__slider"> Posts go here </ul>
+			</div>
+		</section>
+		<!---------------------------- Start Contact Section------------------------------------------->
+		<section id="contact-sec" class="section fp-auto-height-responsive" style="visibility: hidden; height: 0%;">
+			<div class="contact-heading">
+				<p id="contact-heading-text">Contact</p>
+			</div>
+			<div class="row">
+				<div class="col-md-6" id="contact-column-1">
+					<div class="social-btns"> <a class="btn linkedin" href="https://www.linkedin.com/in/the-anton/"><i class="fab fa-linkedin fa-2x"></i></a> <a class="btn github" href="https://github.com/The-Anton"><i class="fab fa-github fa-2x"></i></a>
+						<a class="btn dsc" href="https://dsc.community.dev/u/mc929d/#/about"><img src="./media/dsc.webp" alt=""></i>
+						</a> <a class="btn medium" href="https://medium.com/@theAnton"><i class="fab fa-medium fa-2x"></i></a> <a class="btn quora" href="https://www.quora.com/profile/Shekhar-Kumar-Singh-23"><i class="fab fa-quora fa-2x"></i></a> <a class="btn facebook" href="https://www.facebook.com/profile.php?id=100005728093339"><i class="fab fa-facebook fa-2x"></i></a> <a class="btn twitter" href="https://twitter.com/the_anton01"><i class="fab fa-twitter fa-2x"></i></a> <a class="btn instagram" href="https://www.instagram.com/the_anton.01/"><i class="fab fa-instagram fa-2x"></i></a> </div>
+					<div id="contact-form">
+						<form>
+							<div class="form-group">
+								<input class="form-control w3-border-0" id="nameInput" aria-describedby="emailHelp" placeholder="Your Awesome Name"> </div>
+							<div class="form-group">
+								<input type="email" class="form-control w3-border-0" id="emailInput" placeholder="name@example.com"> </div>
+							<div class="form-group">
+								<label id="contact-input-area" for="exampleFormControlTextarea1"> Type your doubts...</label>
+								<textarea class="form-control w3-border-0" id="msg-box" rows="3"></textarea>
+							</div>
+							<div class="social-btns" id="sendbutton">
+								<a class="btn send" onclick='sendMail()' '><i class=" far fa-paper-plane fa-2x"></i></a>
+                      </div>
+                    </form>
+                  </div>
+
+                  
+              
+            </div>
+
+
+
+
+            <div class="col-md-6" id="contact-column-2"">
+              <img id="main-poster-contact" data-src="./Selected/example-scene-1.svg" alt="contact-svg">
+            </div>
+              
+            </div>
+      </section>
+
+
+</div>
+
+
+
+<!---------------------------- Bootstrap scripts------------------------------------------->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" ></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous" ></script>
+
+<!---------------------------- Typeit.js scripts------------------------------------------->
+<script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js" ></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+<!---------------------------- Progress js scripts------------------------------------------->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.0/circle-progress.min.js" ></script>
+
+<!---------------------------- Smtp.js scripts------------------------------------------->
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+
+<script  src="js/chat-bot.js" ></script>
+<script  src="js/stats.js" ></script>
+<script  src="js/achievments.js" ></script>
+<script  src="js/articles.js" ></script>
+<script  src="js/mooc.js" ></script>
+<script  src="js/contact.js" ></script>
+
+<script>
+	function myFunction() {
+	   var element = document.body;
+	   element.classList.toggle("dark-mode");
+	}
+</script>
+
+<script >
+  
+  new fullpage('#fullpage ', {
+        autoScrolling:true,
+        navigation: true,
+        slidesNavigation: true,
+        navigationTooltips: ['Home ', 'Intro ','Timeline ' ,'Skills ', 'Projects ', 'Milestones ', "Experience", 'Accreditations ', 'Blogs ', 'Contact '],
+        css3: true,
+        lockAnchors: false,
+        menu: '#menu ',
+        responsiveWidth:600,
+
+
+
+        
+
+
+    
+
+      });
+      
+      /* Typeit.js script for auto typing */
+
+      new TypeIt("#topic-1", {
+        strings: ["Heavily intrested in ..." ],
+        speed: 30,
+        waitUntilVisible: true,
+
+        afterComplete: function(){
+          new TypeIt(".multipleStrings", {
+            strings: ["⚫ Coding 💻",  "&nbsp⚫ Robotics 👾", "&nbsp⚫ Deep Learning 🤖", "&nbsp⚫ Blogging 📰" ],
+            speed: 30,
+            waitUntilVisible: true,
+            
+            afterComplete: function(){
+              new TypeIt("#cptext", {
+              speed: 50,
+              waitUntilVisible: true,
+                afterComplete: function(){
+                  new TypeIt("#companionMethods", {
+                      speed: 50,
+                      waitUntilVisible: true
+                    })
+                      .type("I'm proeficient in ", {delay: 300})
+                      .move(-11)
+                      .delete(1)
+                      .move('END')
+                      .type(' Spoken 💬 ')
+                      .pause(300)
+                      .type(' as wellll as in ')
+                      .move(-9)
+                      .delete(2)
+                      .move('END')
+                      .type(' Written ✍🏻 english. 🤵🏻')
+                      .pause(500)
+                      .break({delay: 500})
+                      .break({delay: 500})
+                      .type('<em>- My inner me</em>')
+                      .go();   
+                  }
+            })
+              .type("I 'm active pupil in competitive programming and have knowledge in Data Structure and Algorithm.")
+              .break({delay: 1000})
+              .type('Also a 5 ⭐ coder on Hacker Rank and rated 1400+ on CodeChef ')
+              .go();  
+            }
+          }).go();
+
+        }
+      }).go();
+
+   
+
+
+      
+
+      
+</script>
+</body>
+</html>

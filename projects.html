@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<script type="text/javascript" src="fullpage.js" async></script>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="author" content="Shekhar Kumar">
+	<meta name="description" content="I'm Shekhar , a budding programmer from India. I'm currently pursuing B.E in Information Technology from  AIT Pune . I love solving tech problems and devote most of my time to code and develop projects so that I never get bored.">
+	<meta name="keywords" content="CV, Resume, Portfolio, Army Institute Of Technology">
+	<title>Shekhar</title>
+
+
+	<!----------------------------  Javascript---------------------->
+	<script>
+	document.onreadystatechange = function() {
+		if(document.readyState !== "complete") {} else {
+			document.getElementById('intro-sec').style.visibility = "visible";
+			document.getElementById('timeline-sec').style.visibility = "visible";
+			document.getElementById('skill-sec').style.visibility = "visible";
+			document.getElementById('projects-sec').style.visibility = "visible";
+			document.getElementById('achieve-sec').style.visibility = "visible";
+			document.getElementById('experience-sec').style.visibility = "visible";
+			document.getElementById('mooc-sec').style.visibility = "visible";
+			document.getElementById('blog').style.visibility = "visible";
+			document.getElementById('contact-sec').style.visibility = "visible";
+			new TypeIt("#myElement", {
+				speed: 50,
+				waitUntilVisible: true
+			}).type("Coder").pause(2000).delete(5).type('Developer').pause(2000).delete(9).type('DIY Enthusiasts').pause(2000).delete(15).type('A chaos in space time').go();
+		}
+	};
+
+	</script>
+
+
+	<!----------------------------  CSS---------------------->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="fullpage.css" />
+	<!---------------------------- Bootstrap -------------------->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<!---------------------------- Fonts -------------------->
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500&display=swap" rel="stylesheet">
+	<!---------------------------- End Firebase setup scripts------------------------------------------->
+</head>
+
+<body>
+	<div id="fullpage">
+
+		<!---------------------------- Start Project Section------------------------------------------->
+		<div id="projects-sec" class="section fp-auto-height-responsive" style=" height: 0%;"> <img id="project-anim1" src="./Selected/character 18.svg" alt="svg">
+			<div class="project-heading">
+				<p id="project-heading-text">Projects</p>
+			</div>
+			<div class="projects">
+				<div class="card-container">
+					<div class="card">
+						<div class="front">
+							<div class="card-image"> <img src="" alt=""> </div>
+							<div class="tech-stack">
+								<button class="btn">JavaScript</button>
+								<button class="btn">HTML</button>
+							</div> <img data-src="./martialart/images/idle/1.png" id='pr-img-1' alt="flower">
+							<div class="card-title"><a href="/martialart/index.html">Martial Art Simulator</a></div>
+						</div>
+						<div class="back">
+							<div class="card-back-text"> <a href="/martialart/index.html">Martial Art Simulator</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="card-container">
+					<div class="card">
+						<div class="front">
+							<div class="tech-stack">
+								<button class="btn">ARcore</button>
+								<button class="btn">Kotlin</button>
+							</div> <img data-src="./media/globe.webp" id='pr-img-2' alt="globe">
+							<div class="card-title">AR Globe - Globe in Augmented Reality</div>
+						</div>
+						<div class="back">
+							<div class="card-back-text"> <span>AR Globe is a VR app that projects  3D earth in a real-time environment. We can interact with the globe. It uses ARCore SDK to perform the heavy computation on an android device.</span> </div>
+						</div>
+					</div>
+				</div>
+				<div class="card-container">
+					<div class="card">
+						<div class="front">
+							<div class="tech-stack">
+								<button class="btn">TesorFlow</button>
+								<button class="btn">Python</button>
+							</div> <img data-src="./media/ipl.webp" id='pr-img-3' alt="ipl">
+							<div class="card-title">IPL Match Predictors - PyTorch Machine Learning Model</div>
+						</div>
+						<div class="back">
+							<div class="card-back-text"> <span> A TensorFlow model that predicts the winning chance of an IPL match. Chances are evaluated by training the model heavily on the previous match data.</span> </div>
+						</div>
+					</div>
+				</div>
+				<div class="card-container">
+					<div class="card">
+						<div class="front">
+							<div class="tech-stack">
+								<button class="btn">Kotlin</button>
+								<button class="btn">Java</button>
+							</div> <img data-src="./media/mate-2.webp" id='pr-img-4' alt="mate">
+							<div class="card-title">Mate - Event Managment & Live Leaderboard App</div>
+						</div>
+						<div class="back">
+							<div class="card-back-text"> <span>Mate is an android application that can be used to manage any competitive event. It reduces complicated management tasks by digitizing it. It also serves as the real-time score of all the matches or competition rankings.</span> </div>
+						</div>
+					</div>
+				</div>
+				<div class="card-container">
+					<div class="card">
+						<div class="front">
+							<div class="tech-stack">
+								<button class="btn">Kotlin</button>
+								<button class="btn">JavaScript</button>
+							</div> <img data-src="./media/qzoid-trans.webp" id='pr-img-5' alt="qzoid">
+							<div class="card-title">Qzoid - Crossplatform Quiz/Survey Sharing App</div>
+						</div>
+						<div class="back">
+							<div class="card-back-text"> <span>Qzoid is an android app that can be used to create and share Quiz and Survey. Sharing links opens the content over the internet which makes it highly accessible.</span> </div>
+						</div>
+					</div>
+				</div>
+				<div class="card-container">
+					<div class="card">
+						<div class="front">
+							<div class="tech-stack">
+								<button class="btn">Kotlin</button>
+								<button class="btn">ExoPlayer</button>
+							</div> <img data-src="./media/fireplayer.webp" id='pr-img-6' alt="fireplayer">
+							<div class="card-title">Fireplayer - Video Streaming Using ExoPlayer</div>
+						</div>
+						<div class="back">
+							<div class="card-back-text"> <span>Fireplayer is a video streaming app that streams online videos on mobile phones. Fireplayer uses Exo player to serve a responsive, fast, and efficient video playback experience. </span> </div>
+						</div>
+					</div>
+				</div>
+			</div> <img id="project-anim2" src="./Selected/character 20.svg" alt="svg"> </div>
+	
+      </section>
+
+
+</div>
+
+
+
+<!---------------------------- Bootstrap scripts------------------------------------------->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous" ></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous" ></script>
+
+<!---------------------------- Typeit.js scripts------------------------------------------->
+<script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js" ></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+
+<!---------------------------- Progress js scripts------------------------------------------->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.0/circle-progress.min.js" ></script>
+
+<!---------------------------- Smtp.js scripts------------------------------------------->
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+
+
+<script  src="js/chat-bot.js" ></script>
+<script  src="js/stats.js" ></script>
+<script  src="js/achievments.js" ></script>
+<script  src="js/articles.js" ></script>
+<script  src="js/mooc.js" ></script>
+<script  src="js/contact.js" ></script>
+
+<script>
+	function myFunction() {
+	   var element = document.body;
+	   element.classList.toggle("dark-mode");
+	}
+</script>
+
+<script >
+  
+  new fullpage('#fullpage ', {
+        autoScrolling:true,
+        navigation: true,
+        slidesNavigation: true,
+        navigationTooltips: ['Home ', 'Intro ','Timeline ' ,'Skills ', 'Projects ', 'Milestones ', "Experience", 'Accreditations ', 'Blogs ', 'Contact '],
+        css3: true,
+        lockAnchors: false,
+        menu: '#menu ',
+        responsiveWidth:600,
+
+
+
+        
+
+
+    
+
+      });
+      
+      /* Typeit.js script for auto typing */
+
+      new TypeIt("#topic-1", {
+        strings: ["Heavily intrested in ..." ],
+        speed: 30,
+        waitUntilVisible: true,
+
+        afterComplete: function(){
+          new TypeIt(".multipleStrings", {
+            strings: ["⚫ Coding 💻",  "&nbsp⚫ Robotics 👾", "&nbsp⚫ Deep Learning 🤖", "&nbsp⚫ Blogging 📰" ],
+            speed: 30,
+            waitUntilVisible: true,
+            
+            afterComplete: function(){
+              new TypeIt("#cptext", {
+              speed: 50,
+              waitUntilVisible: true,
+                afterComplete: function(){
+                  new TypeIt("#companionMethods", {
+                      speed: 50,
+                      waitUntilVisible: true
+                    })
+                      .type("I'm proeficient in ", {delay: 300})
+                      .move(-11)
+                      .delete(1)
+                      .move('END')
+                      .type(' Spoken 💬 ')
+                      .pause(300)
+                      .type(' as wellll as in ')
+                      .move(-9)
+                      .delete(2)
+                      .move('END')
+                      .type(' Written ✍🏻 english. 🤵🏻')
+                      .pause(500)
+                      .break({delay: 500})
+                      .break({delay: 500})
+                      .type('<em>- My inner me</em>')
+                      .go();   
+                  }
+            })
+              .type("I 'm active pupil in competitive programming and have knowledge in Data Structure and Algorithm.")
+              .break({delay: 1000})
+              .type('Also a 5 ⭐ coder on Hacker Rank and rated 1400+ on CodeChef ')
+              .go();  
+            }
+          }).go();
+
+        }
+      }).go();
+
+   
+
+
+      
+
+      
+</script>
+</body>
+</html>

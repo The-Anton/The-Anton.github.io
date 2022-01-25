@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Martial Art Simulator</title>
+        <style>
+            body {
+              background-image: url("images/background.jpg");
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: cover;
+            }
+          </style>
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div id="container">
+            <div>
+                <h1 id="title" class="text-center text-3xl">Martial Art Simulator</h1>
+            </div>
+            <div id="canvas-container" class="mx-16 my-8" >
+                    <canvas id="simulation-canvas" height="500px" weight="500px"  ></canvas>
+                <div id="control-section" class="mx-64 my-8 grid gap-6 grid-cols-3 grid-rows-3">
+                    <button id="kick" class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">Kick (Down)</button>
+                    <button id="punch" class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">Punch (Up)</button>
+                    <button id="forward" class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">Forward (Right)</button>
+                    <button id="backward" class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">Backward (Left)</button>
+                    <button id="block" class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">Block</button>
+                </div>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
+
