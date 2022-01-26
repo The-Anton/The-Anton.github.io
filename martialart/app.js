@@ -105,10 +105,10 @@ loadImages((images) => {
 
         switch (key) {
             case "ArrowDown":
-                queueAnimation.push("kick");
+                queueAnimations.push("kick");
                 break;
             case "ArrowUp":
-                queueAnimation.push("punch");
+                queueAnimations.push("punch");
                 break;
             case "ArrowRight":
                 queueAnimations.push("forward");
